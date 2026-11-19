@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Condiciones del servicio · Publicador Shorts</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&display=swap"><style>
+/* Layout: one readable column, a compact app header, two legal sections reachable by #privacidad and #terminos */
+:root {
+  --bg: #FBF8F4; --surface: #F3ECE3; --fg: #2B2A28; --muted: #6A645C; --accent: #B8562F; --line: #E2D8CB;
+  --display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --body: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #1C1A18; --surface: #262320; --fg: #EFE9E1; --muted: #A79F94; --accent: #E58A5F; --line: #3A3530; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #1C1A18; --surface: #262320; --fg: #EFE9E1; --muted: #A79F94; --accent: #E58A5F; --line: #3A3530; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 16px/1.65 var(--body); }
+.wrap { max-width: 44rem; margin: 0 auto; padding-block: 40px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header { display: flex; gap: 16px; align-items: center; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+.logo { width: 56px; height: 56px; flex: none; border-radius: 12px; background: var(--accent); display: grid; place-items: center;
+  font: 700 22px var(--display); color: var(--bg); }
+h1 { font: 700 1.9rem/1.15 var(--display); margin: 0; text-wrap: balance; }
+.sub { color: var(--muted); margin: 4px 0 0; }
+nav { display: flex; gap: 8px; flex-wrap: wrap; margin: 24px 0 8px; }
+nav a { font: 600 14px var(--body); color: var(--fg); text-decoration: none; padding: 8px 14px; border: 1px solid var(--line); border-radius: 999px; }
+nav a:hover, nav a:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+section { padding-top: 32px; }
+h2 { font: 700 1.4rem/1.2 var(--display); margin: 0 0 4px; }
+.date { color: var(--muted); font-size: 14px; margin: 0 0 16px; }
+h3 { font: 600 1rem var(--body); margin: 24px 0 4px; }
+p, li { margin: 0 0 10px; }
+ul { padding-left: 1.2rem; margin: 0 0 10px; }
+.box { background: var(--surface); border-radius: 12px; padding: 16px 18px; margin: 16px 0; }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+a { color: var(--accent); }
+</style></head>
+<body><div class="wrap"><header>
+    <div class="logo" aria-hidden="true">PS</div>
+    <div>
+      <h1>Publicador Shorts</h1>
+      <p class="sub">Herramienta personal que publica videos cortos propios en las cuentas de sus autores.</p>
+    </div>
+  </header><nav aria-label="Secciones"><a href="index.html">Qué hace</a><a href="privacidad.html">Política de privacidad</a><a href="terminos.html" aria-current="page">Condiciones del servicio</a></nav><section id="terminos">
+    <h2>Condiciones del servicio</h2>
+    <p class="date">Vigentes desde el 14 de noviembre de 2026</p>
+    <h3>Uso</h3>
+    <p>Publicador Shorts es una herramienta personal. Solo se usa para publicar contenido original del autor en cuentas que le pertenecen, respetando las condiciones y normas de comunidad de YouTube, TikTok y Meta.</p>
+    <h3>Contenido</h3>
+    <p>El autor es responsable del contenido que publica. Los videos se generan con ilustraciones propias y voz sintética; cuando una red lo pide, se marcan como contenido generado o modificado con IA.</p>
+    <h3>Sin garantías</h3>
+    <p>La herramienta se ofrece tal cual, sin garantías. Las redes sociales pueden cambiar sus API o sus condiciones en cualquier momento.</p>
+    <h3>Cambios</h3>
+    <p>Estas condiciones pueden actualizarse; la fecha de vigencia indica la última versión.</p>
+  </section>
+<footer>Publicador Shorts · herramienta personal del canal Renueva tu Hogar</footer></div></body></html>

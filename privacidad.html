@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Publicador Shorts</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&display=swap"><style>
+/* Layout: one readable column, a compact app header, two legal sections reachable by #privacidad and #terminos */
+:root {
+  --bg: #FBF8F4; --surface: #F3ECE3; --fg: #2B2A28; --muted: #6A645C; --accent: #B8562F; --line: #E2D8CB;
+  --display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --body: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #1C1A18; --surface: #262320; --fg: #EFE9E1; --muted: #A79F94; --accent: #E58A5F; --line: #3A3530; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #1C1A18; --surface: #262320; --fg: #EFE9E1; --muted: #A79F94; --accent: #E58A5F; --line: #3A3530; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 16px/1.65 var(--body); }
+.wrap { max-width: 44rem; margin: 0 auto; padding-block: 40px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header { display: flex; gap: 16px; align-items: center; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+.logo { width: 56px; height: 56px; flex: none; border-radius: 12px; background: var(--accent); display: grid; place-items: center;
+  font: 700 22px var(--display); color: var(--bg); }
+h1 { font: 700 1.9rem/1.15 var(--display); margin: 0; text-wrap: balance; }
+.sub { color: var(--muted); margin: 4px 0 0; }
+nav { display: flex; gap: 8px; flex-wrap: wrap; margin: 24px 0 8px; }
+nav a { font: 600 14px var(--body); color: var(--fg); text-decoration: none; padding: 8px 14px; border: 1px solid var(--line); border-radius: 999px; }
+nav a:hover, nav a:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+section { padding-top: 32px; }
+h2 { font: 700 1.4rem/1.2 var(--display); margin: 0 0 4px; }
+.date { color: var(--muted); font-size: 14px; margin: 0 0 16px; }
+h3 { font: 600 1rem var(--body); margin: 24px 0 4px; }
+p, li { margin: 0 0 10px; }
+ul { padding-left: 1.2rem; margin: 0 0 10px; }
+.box { background: var(--surface); border-radius: 12px; padding: 16px 18px; margin: 16px 0; }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+a { color: var(--accent); }
+</style></head>
+<body><div class="wrap"><header>
+    <div class="logo" aria-hidden="true">PS</div>
+    <div>
+      <h1>Publicador Shorts</h1>
+      <p class="sub">Herramienta personal que publica videos cortos propios en las cuentas de sus autores.</p>
+    </div>
+  </header><nav aria-label="Secciones"><a href="index.html">Qué hace</a><a href="privacidad.html" aria-current="page">Política de privacidad</a><a href="terminos.html">Condiciones del servicio</a></nav><section id="privacidad">
+    <h2>Política de privacidad</h2>
+    <p class="date">Vigente desde el 14 de noviembre de 2026</p>
+
+    <h3>Datos que se usan</h3>
+    <ul>
+      <li>Tokens de acceso que entregan YouTube, TikTok y Facebook cuando el autor autoriza la app.</li>
+      <li>Información básica de la cuenta conectada (identificador y nombre visible), solo para saber en qué cuenta se publica.</li>
+      <li>Los videos y textos que la propia app genera para publicar.</li>
+    </ul>
+
+    <h3>Para qué se usan</h3>
+    <p>Únicamente para subir y publicar los videos del autor en sus propias cuentas. No se usan para publicidad, perfiles de usuario ni ningún otro fin.</p>
+
+    <h3>Dónde se guardan</h3>
+    <p>Los tokens y los videos se guardan solo en el ordenador del autor. No se envían a ningún servidor propio ni a terceros, salvo a las API oficiales de cada red al publicar.</p>
+
+    <h3>Con quién se comparten</h3>
+    <p>Con nadie. La información solo viaja entre el ordenador del autor y la red social correspondiente.</p>
+
+    <h3>Cómo revocar el acceso</h3>
+    <p>El autor puede retirar el permiso en cualquier momento desde la configuración de cada red (por ejemplo, TikTok → Configuración → Seguridad → Apps y servicios; Cuenta de Google → Seguridad → Apps de terceros; Facebook → Configuración → Integraciones comerciales) y borrar los archivos de credenciales de su ordenador.</p>
+
+    <h3>Contacto</h3>
+    <p>Para cualquier consulta sobre esta política, escribe por mensaje a la página de Facebook <strong>Renueva tu Hogar</strong>.</p>
+  </section>
+<footer>Publicador Shorts · herramienta personal del canal Renueva tu Hogar</footer></div></body></html>
